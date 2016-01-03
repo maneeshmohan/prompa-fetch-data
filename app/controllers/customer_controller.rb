@@ -22,6 +22,13 @@ def delete
 end
 
 def index
+	@customer= Customer.all
+	@data=@customer.fetch
+	if @data.nil?
+	   puts "did not get"
+	else
+	   puts "got it!!"
+	end
 end
 
 end
